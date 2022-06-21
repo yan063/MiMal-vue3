@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve --mode=development",
+    "build": "vue-cli-service build --mode=production",
+    "lint": "vue-cli-service lint",
+    "prev": "vue-cli-service serve --mode=prev",
+    "test": "vue-cli-service serve --mode=test"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.7",
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.16",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",
@@ -18,7 +24,12 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "jsonp": "^0.2.1",
+    "mockjs": "^1.1.0",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0",
+    "vue-cookie": "^1.1.4"
   },
   "eslintConfig": {
     "root": true,
